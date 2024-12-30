@@ -1,0 +1,177 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+     background: linear-gradient(135deg, #283c81, #171c31); /* Темный градиент */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Более выраженная тень */
+    overflow: hidden;
+    backdrop-filter: blur(10px); /* Размытие фона */
+}
+
+.users-list {
+    flex: 2;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.users-list h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #fff;
+      font-family: 'Roboto', sans-serif;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.add-user {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.add-user input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.add-user input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.add-user button {
+    padding: 10px 15px;
+    background: #6a82fb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.add-user button:hover {
+    background: #4c65e7;
+}
+
+
+.users-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.users-list li {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s;
+}
+
+.users-list li:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.users-list li.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+}
+
+.chat {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.chat-header {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+        font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 1.8em;
+      color: #fff;
+}
+
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    background: rgba(255, 255, 255, 0.1);
+     color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 70%;
+    align-self: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.message.sent {
+    background: #72b899;
+    align-self: flex-end;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-input {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+}
+
+.chat-input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chat-input button {
+    padding: 10px 15px;
+    background: #6a82fb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-input button:hover {
+    background: #4c65e7;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qwerty Messenger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="users-list">
+            <h2>Контакты</h2>
+            <div class="add-user">
+                <input type="text" id="add-phone" placeholder="Номер телефона">
+                <button id="add-button">Добавить</button>
+            </div>
+            <ul id="user-list">
+                <!-- Друзья будут добавляться сюда через JavaScript -->
+            </ul>
+        </aside>
+        <main class="chat">
+            <div class="chat-header">
+                <h2 id="chat-title">Выберите пользователя</h2>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Сообщения будут добавляться сюда -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Введите сообщение...">
+                <button id="send-button">Отправить</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
